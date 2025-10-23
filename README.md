@@ -1,7 +1,7 @@
 
----
 
-````markdown
+
+
 # 🚗 Autonomous Surveillance Car
 
 An AI-powered **Autonomous Surveillance Car** built using **Raspberry Pi**, **Python**, and **Streamlit**. It allows real-time video streaming, remote control, and smart autonomous navigation — all from an elegant, responsive web dashboard.
@@ -29,7 +29,7 @@ The car operates in both **manual** and **autonomous** modes, streams live camer
 - **Frameworks:** Streamlit for UI, Flask (optional for streaming), TFLite for inference  
 
 ---
-````
+
 ## 🚀 Setup Instructions
 1. **Clone the repository**
    ```bash
