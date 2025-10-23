@@ -125,6 +125,3 @@ Feel free to open issues or submit pull requests to improve UI, add sensor integ
 This project is licensed under the **MIT License** — free to use, modify, and share.
 
 ---
-
-Would you like me to create the full **`README.md` file** (formatted and ready for GitHub upload with emoji, sections, and code blocks)?
-I can generate it directly for you.
