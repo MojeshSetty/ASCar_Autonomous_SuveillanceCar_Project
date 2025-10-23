@@ -23,9 +23,9 @@ import requests
 from urllib.parse import urljoin
 import validators
 
-st.set_page_config(page_title="Surveillance Car Remote", layout="wide")
+st.set_page_config(page_title="Project ASCar", layout="wide")
 
-st.title("Project ASCar - Autonomous Surveillance Car — Remote Control ")
+st.title(" Autonomous Surveillance Car - RGMCET")
 
 # Sidebar: Raspberry Pi base URL (e.g., http://192.168.0.111:8080 or https://<ngrok>.io)
 st.sidebar.header("Raspberry Pi / Server Settings")
