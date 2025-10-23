@@ -1,37 +1,67 @@
 
 
 
+# 🚘 Autonomous Surveillance Car — Streamlit Control Dashboard
 
-# 🚗 Autonomous Surveillance Car
-
-An AI-powered **Autonomous Surveillance Car** built using **Raspberry Pi**, **Python**, and **Streamlit**. It allows real-time video streaming, remote control, and smart autonomous navigation — all from an elegant, responsive web dashboard.
-
----
-
-## 🧭 Project Overview
-This project demonstrates how **edge AI** and **IoT** can be integrated for smart surveillance systems.  
-The car operates in both **manual** and **autonomous** modes, streams live camera footage, and can be controlled remotely through a Streamlit dashboard. Designed for research, security, and robotics learning, it combines **computer vision**, **control automation**, and **web-based interaction** into one modular system.
+An **AI-powered autonomous surveillance system** built using **Raspberry Pi**, **Python**, and **Streamlit**, designed to perform real-time monitoring, remote control, and autonomous navigation.
+This project combines **computer vision**, **Flask streaming**, and a **modern Streamlit web interface** for intuitive human–robot interaction.
 
 ---
 
-## 🧠 Features
-- 🎥 **Live Video Feed** — Real-time camera streaming via Raspberry Pi  
-- 🎮 **Manual Controls** — Move the car and control the camera remotely  
-- 🤖 **Autonomous Mode** — AI-based navigation and object detection  
-- 🌐 **Streamlit Web Dashboard** — Vertical layout with modern design  
-- ⚙️ **System Status** — Shows mode, connection, and uptime  
+## 🧠 Project Overview
+
+The **Autonomous Surveillance Car** is capable of:
+
+* Detecting and avoiding obstacles using **ultrasonic sensors**
+* Capturing and streaming **live video feed** from the Pi Camera
+* Operating in both **Manual** and **Autonomous** modes
+* Controlling motion (Forward, Backward, Left, Right, Stop) via the web UI
+* Displaying **system status** and control logs in real-time
+
+The new **Streamlit-based dashboard** offers a modern, mobile-friendly, and cloud-deployable interface — ideal for remote monitoring.
 
 ---
 
-## 🧩 Tech Stack
-- **Hardware:** Raspberry Pi 4, Pi Camera, Motor Driver, Sensors (Ultrasonic, IMU)  
-- **Software:** Python, OpenCV, Streamlit, GPIO, TensorFlow Lite  
-- **Frameworks:** Streamlit for UI, Flask (optional for streaming), TFLite for inference  
+## ⚙️ Tech Stack
+
+| Component     | Technology                                                  |
+| ------------- | ----------------------------------------------------------- |
+| Hardware      | Raspberry Pi 4, Ultrasonic Sensors, Motor Driver, Pi Camera |
+| Backend       | Python, OpenCV, Flask                                       |
+| Web Interface | Streamlit                                                   |
+| Communication | HTTP/Flask Stream                                           |
+| Deployment    | Streamlit Cloud / GitHub                                    |
 
 ---
 
-## 🚀 Setup Instructions
+## 🖥️ Features
+
+* 🎥 **Live video feed** from Raspberry Pi camera
+* 🎮 **Manual control buttons** (Forward, Backward, Left, Right, Stop)
+* 🤖 **Autonomous mode toggle** for self-navigation
+* ⚡ **Real-time system status** (camera, sensors, connection, uptime)
+* 🌐 **Streamlit web dashboard** with Tailwind-inspired design
+
+---
+
+## 📁 Project Structure
+
+```
+Autonomous_Surveillance_Car_Project/
+│
+├── surveillance_app.py           # Streamlit web interface
+├── surveillance_car.py           # Core Raspberry Pi control logic
+├── static/                       # CSS, JS, or media files (optional)
+├── requirements.txt              # Python dependencies
+└── README.md                     # Project documentation
+```
+
+---
+
+## 🚀 How to Run Locally
+
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/<your-username>/autonomous-surveillance-car.git
    cd autonomous-surveillance-car
@@ -43,13 +73,19 @@ The car operates in both **manual** and **autonomous** modes, streams live camer
    pip install -r requirements.txt
    ```
 
-3. **Run the Streamlit app**
+3. **Run the Raspberry Pi control code**
+
+   ```bash
+   python3 surveillance_car.py
+   ```
+
+4. **Launch the Streamlit dashboard**
 
    ```bash
    streamlit run surveillance_app.py
    ```
 
-4. **Access the dashboard**
+5. **Open in browser**
 
    ```
    http://localhost:8501
@@ -57,34 +93,38 @@ The car operates in both **manual** and **autonomous** modes, streams live camer
 
 ---
 
-## 📸 Preview
+## ☁️ Deployment
 
+You can deploy the Streamlit dashboard directly on **[Streamlit Cloud](https://share.streamlit.io)** or any web hosting platform linked to your GitHub repository.
+
+---
+
+## 📷 Preview
 ![Dashboard Preview](preview.png)
 
 ---
+---
+## MY Team 
 
-## 📂 Folder Structure
+I am very greatful to my team for being so supportive and encouragment in this project . Here is my Team 
+* Sai Pawan Kummari
+* Jaya Naveen Singh Bondili
+* Bharathi Chantimalla
+* And I am also very thankful to my department : HOD Sir Dr. Kishore, and all faculty members and Gopi Sir
+---
 
-```
-├── surveillance_app.py     # Streamlit web dashboard
-├── camera_stream.py        # Handles live video feed
-├── control_module.py       # Manual and autonomous control logic
-├── requirements.txt
-└── README.md
-```
+## 🤝 Contributions
+
+Contributions are welcome!
+Feel free to open issues or submit pull requests to improve UI, add sensor integration, or enhance performance.
 
 ---
 
-## 🧾 License
+## 📜 License
 
-Licensed under the **MIT License** — free for modification and use in research or education.
+This project is licensed under the **MIT License** — free to use, modify, and share.
 
 ---
 
-## 👨‍💻 Author
-
-**Mojesh Chinna**
-AI & Embedded Systems Developer
-🔗 [LinkedIn](https://www.linkedin.com/in/mojeshchinna)
-
-
+Would you like me to create the full **`README.md` file** (formatted and ready for GitHub upload with emoji, sections, and code blocks)?
+I can generate it directly for you.
